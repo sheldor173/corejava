@@ -25,7 +25,7 @@ public class NumberMage {
 
                 System.out.println(i);
 
-            }else if (i >= end) {
+            } else if (i >= end) {
 
                 break;
             }
@@ -34,4 +34,29 @@ public class NumberMage {
 
     }
 
+    public static void testPrime(int number) {
+
+        if (number < 2) {
+
+            System.out.println(number + "is not prime");
+
+        } else {
+
+            for (int i = 2; i <= Math.sqrt(number); i++) {
+
+                if (number % i == 0) {
+
+                    System.out.println(number + " is not prime");
+
+                    return;
+                }
+            }
+
+
+            System.out.println(number + " is prime");
+
+        }
+
+
+    }
 }

@@ -16,7 +16,9 @@ public class HelloWorld {
 
                 System.out.println("Enter your input:");
 
-                System.out.println("1]Fibonacci");
+                System.out.println("1]Print Fibonacci");
+
+                System.out.println("2]Check Prime");
 
                 System.out.println("press any other key to exit");
 
@@ -38,6 +40,15 @@ public class HelloWorld {
 
                             NumberMage.printFibonacci(start, end);
 
+                            break;
+
+                        case '2':
+
+                            System.out.println("input number:");
+
+                            var number = scanner.nextInt();
+
+                            NumberMage.testPrime(number);
 
                             break;
 

@@ -26,20 +26,14 @@ public class HelloWorld {
 
                 switch (input.charAt(0)) {
 
-                    case '1':
+                    case '1' -> NumberMage.Enter();
 
-                        NumberMage.Enter();
+                    case '2' -> PatternWizard.Enter();
 
-                        break;
-
-                    case '2':
-
-                        PatternWizard.Enter();
-
-                        break;
-                    default:
+                    default -> {
                         System.out.println("exiting...");
                         return;
+                    }
                 }
 
             } catch (Exception e) {

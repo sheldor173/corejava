@@ -20,6 +20,14 @@ public class HelloWorld {
 
                 System.out.println("2]Check Prime");
 
+                System.out.println("3]Check Palindrome");
+
+                System.out.println("4]Print Factorial");
+
+                System.out.println("5]Check Armstrong");
+
+                System.out.println("6]Print Random Numbers");
+
                 System.out.println("press any other key to exit");
 
                 var input = scanner.next();
@@ -49,6 +57,48 @@ public class HelloWorld {
                             var number = scanner.nextInt();
 
                             NumberMage.testPrime(number);
+
+                            break;
+
+                        case '3':
+
+                            System.out.println("input number:");
+
+                            number = scanner.nextInt();
+
+                            NumberMage.testPalindrome(number);
+
+                            break;
+
+                        case '4':
+
+                            System.out.println("input number:");
+
+                            number = scanner.nextInt();
+
+                            System.out.println(NumberMage.printFactorial(number));
+
+                            break;
+
+                        case '5':
+
+                            System.out.println("input number:");
+
+                            number = scanner.nextInt();
+
+                            System.out.println(NumberMage.testArmstrong(number));
+
+                            break;
+
+                        case '6':
+
+                            NumberMage.printRandomType1();
+
+                            NumberMage.printRandomType2();
+
+                            NumberMage.printRandomType3();
+
+                            NumberMage.printRandomType4();
 
                             break;
 
